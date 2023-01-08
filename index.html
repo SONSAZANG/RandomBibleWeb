@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>RandomBible</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+        .main {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Gowun Dodum';
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+</head>
+
+<body style="overflow: hidden;">
+    <div class="main">
+        <h1 style="font-size: 40px;">2023년 말씀 배경</h1>
+        <button onclick="location.href='result.html'" class="button_base">말씀 뽑기</button>
+    </div>
+
+    <script>
+        // 화면 로딩시 랜덤 이미지 
+        window.onload = function() {
+            document.body.style.backgroundImage = `url('assets/BG01.png')`;
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.marginRight = "auto";
+            document.body.style.marginLeft = "auto";
+        }
+
+        // 말씀 생성 버튼
+        function getRandomVerse() {
+
+        }
+
+        // 랜덤 버튼 생성 함수
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max) + 1;
+        }
+
+        // 말씀 뽑기 클릭시 작동
+        function randomBible() {
+            document.body.style.backgroundImage = `url('assets/BG0${getRandomInt(5)}.png')`;
+            document.body.style.backgroundRepeat = "no-repeat";
+            document.body.style.backgroundSize = "cover";
+            document.body.style.marginRight = "auto";
+            document.body.style.marginLeft = "auto";
+        }
+    </script>
+    <link rel="stylesheet" href="button.css">
+</body>
+</html>

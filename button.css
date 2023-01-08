@@ -1,0 +1,27 @@
+
+.button_base {
+    margin: 0;
+    border: 0;
+    padding: 10 10 10 10;
+    font-size: 14px;
+    width: 100px;
+    height: 40px;
+    cursor: default;
+    border-radius: 12px;
+    font-family: 'Gowun Dodum';
+    color: white;
+    background-color: black;
+}
+
+/* ### ### ### 01 */
+.b01_simple_rollover {
+    color: #000000;
+    border: #000000 solid 1px;
+    background-color: #000000;
+}
+
+.b01_simple_rollover:hover {
+    color: #000;
+    background-color: #000000;
+}
+
