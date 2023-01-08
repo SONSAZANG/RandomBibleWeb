@@ -20,17 +20,19 @@
     <script src="app.js"></script>
 </head>
 
-<body style="overflow: hidden; margin: 0;">
+<body>
     <div class="main">
         <h1 class="mainIndexText"">2023년 말씀 배경</h1>
         <button onclick="location.href='result.html'" class="button_base">말씀 뽑기</button>
     </div>
 
     <script>
-        // 화면 로딩시 랜덤 이미지 
-        window.onload = function() {
-            indexLoad();
-        }
+        document.body.style.backgroundImage = `url('assets/BG01.png')`;
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "cover";
+        document.body.style.marginRight = "auto";
+        document.body.style.marginLeft = "auto";
+        
     </script>
 </body>
 </html>
