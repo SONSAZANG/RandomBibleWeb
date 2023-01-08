@@ -32,18 +32,15 @@
     </div>
 
     <script>
+        document.body.style.backgroundImage = `url('assets/background.png')`;
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition = "center";
+        document.body.style.marginRight = "auto";
+        document.body.style.marginLeft = "auto";
+
         // 화면 로딩시 랜덤 이미지 
         window.onload = function() {
-            document.body.style.backgroundImage = `url('assets/BG01.png')`;
-            document.body.style.backgroundRepeat = "no-repeat";
-            document.body.style.backgroundSize = "cover";
-            document.body.style.marginRight = "auto";
-            document.body.style.marginLeft = "auto";
-        }
-
-        // 말씀 생성 버튼
-        function getRandomVerse() {
-
+            
         }
 
         // 랜덤 버튼 생성 함수
@@ -51,14 +48,6 @@
             return Math.floor(Math.random() * max) + 1;
         }
 
-        // 말씀 뽑기 클릭시 작동
-        function randomBible() {
-            document.body.style.backgroundImage = `url('assets/BG0${getRandomInt(5)}.png')`;
-            document.body.style.backgroundRepeat = "no-repeat";
-            document.body.style.backgroundSize = "cover";
-            document.body.style.marginRight = "auto";
-            document.body.style.marginLeft = "auto";
-        }
     </script>
     <link rel="stylesheet" href="button.css">
 </body>

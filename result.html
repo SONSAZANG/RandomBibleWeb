@@ -37,21 +37,18 @@
             <h1 id="resultVerseId" style="font-size: 14px; text-align: center;">2023년 말씀 배경 결과</h1>
         </div>
     </div>
-    <div style="position: absolute; right: 5px; bottom: 50px;">
-        <button onclick="downloadImage()" class="button_base">이미지 저장</button>
-    </div>
-    <div style="position: absolute; right: 5px; bottom: 5px;">
-        <button onclick="location.href='index.html'" class="button_base">다시 뽑기</button>
-    </div>
+    <div style="position: absolute; right: 5px; bottom: 70px;"><button onclick="downloadImage()" class="button_base">이미지 저장</button></div>
+    <div style="position: absolute; right: 5px; bottom: 5px;"><button onclick="location.href='index.html'" class="button_base">다시 뽑기</button></div>
+
     <script>
         let testData = JSON.parse(JSON.stringify(TestFile));
         console.log(testData);
-
+        randomBible();
+        getRandomVerse();
 
         // 화면 로딩시 랜덤 이미지 
         window.onload = function () {
-            randomBible();
-            getRandomVerse();
+
         }
 
         // 말씀 생성 버튼
@@ -61,9 +58,6 @@
         }
 
         function downloadImage() {
-            document.getElementById("capture_area").style.backgroundImage = `url('assets/BG0${getRandomInt(5)}.png')`;
-            document.getElementById("capture_area").style.backgroundRepeat = "no-repeat";
-            document.getElementById("capture_area").style.backgroundSize = "cover";
             html2canvas(document.getElementById("capture_area")).then(function (canvas) {
                 var el = document.createElement("a")
                 el.href = canvas.toDataURL("image/jpeg")

@@ -1,16 +1,16 @@
 
 .button_base {
-    margin: 0;
+    margin-top: 100px;
     border: 0;
-    padding: 10 10 10 10;
-    font-size: 14px;
-    width: 100px;
-    height: 40px;
+    font-size: 18px;
+    width: 144px;
+    height: 64px;
+    position: bottom;
     cursor: default;
-    border-radius: 12px;
     font-family: 'Gowun Dodum';
-    color: white;
-    background-color: black;
+    font-weight: 700;
+    color: black;
+    background: url("assets/Button.png") no-repeat;
 }
 
 /* ### ### ### 01 */
