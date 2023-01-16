@@ -32,3 +32,12 @@ function randomBible() {
     document.getElementById("capture_area").style.backgroundRepeat = "no-repeat";
     document.getElementById("capture_area").style.backgroundSize = "cover";
 }
+
+// function SaveTest() {
+//     for (let i = 0; i < VerseData.bibles.length; i++) {
+//         document.getElementById('resultVerse').innerText = VerseData.bibles[i].verse;
+//         document.getElementById('resultVerseId').innerText = VerseData.bibles[i].verseid;
+//         randomBible();
+//         downloadImage();
+//     }
+// }
